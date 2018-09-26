@@ -4,12 +4,15 @@ Joi.objectId = require('joi-objectid')(Joi);
 const schema = Joi.object().keys({
   block: Joi.string(),
   blockId: Joi.objectId(),
-  challengeType: Joi.number().min(0).max(9).required(),
+  challengeType: Joi.number()
+    .min(0)
+    .max(9)
+    .required(),
   checksum: Joi.number(),
   dashedName: Joi.string(),
-  description: Joi.array().items(
-    Joi.string().allow('')
-  ).required(),
+  description: Joi.array()
+    .items(Joi.string().allow(''))
+    .required(),
   fileName: Joi.string(),
   files: Joi.object().pattern(
     /(jsx?|html|css|sass)$/,
@@ -17,14 +20,8 @@ const schema = Joi.object().keys({
       key: Joi.string(),
       ext: Joi.string(),
       name: Joi.string(),
-      head: [
-        Joi.array().items(Joi.string().allow('')),
-        Joi.string().allow('')
-      ],
-      tail: [
-        Joi.array().items(Joi.string().allow('')),
-        Joi.string().allow('')
-      ],
+      head: [Joi.array().items(Joi.string().allow('')), Joi.string().allow('')],
+      tail: [Joi.array().items(Joi.string().allow('')), Joi.string().allow('')],
       contents: [
         Joi.array().items(Joi.string().allow('')),
         Joi.string().allow('')
@@ -32,6 +29,7 @@ const schema = Joi.object().keys({
     })
   ),
   guideUrl: Joi.string().uri({ scheme: 'https' }),
+  videoUrl: Joi.string().allow(''),
   helpRoom: Joi.string(),
   id: Joi.objectId().required(),
   isBeta: Joi.bool(),
@@ -49,9 +47,7 @@ const schema = Joi.object().keys({
       crossDomain: Joi.bool()
     })
   ),
-  solutions: Joi.array().items(
-    Joi.string().optional()
-  ),
+  solutions: Joi.array().items(Joi.string().optional()),
   superBlock: Joi.string(),
   superOrder: Joi.number(),
   suborder: Joi.number(),
@@ -59,7 +55,9 @@ const schema = Joi.object().keys({
     // public challenges
     Joi.object().keys({
       text: Joi.string().required(),
-      testString: Joi.string().allow('').required()
+      testString: Joi.string()
+        .allow('')
+        .required()
     }),
     // our tests used in certification verification
     Joi.object().keys({

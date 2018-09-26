@@ -36,6 +36,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c3b4EAp",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -98,11 +99,14 @@
             "assert(code.match(/.fullCard\\s*{[\\s\\S][^}]*\\n*^\\s*width\\s*:\\s*245px\\s*;/gm), 'Your code should change the <code>width</code> property of the card to 245 pixels by using the <code>fullCard</code> class selector.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \".fullCard {\\nwidth: 245px; border: 1px solid #ccc; border-radius: 5px; margin: 10px 5px; padding: 4px;}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cvVLPtN",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -171,6 +175,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cEDaDTN",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -243,7 +248,7 @@
           "text":
             "The <code>strong</code> tag should wrap around the words \"Stanford University\".",
           "testString":
-            "assert($('strong').text().match(/Stanford University/gi), 'The <code>strong</code> tag should wrap around the words \"Stanford University\".');"
+            "assert($('strong').text().match(/^Stanford University$/gi), 'The <code>strong</code> tag should wrap around the words \"Stanford University\".');"
         }
       ],
       "solutions": [],
@@ -251,6 +256,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/ceJNBSb",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -307,7 +313,7 @@
       "description": [
         "To underline text, you can use the <code>u</code> tag. This is often used to signify that a section of text is important, or something to remember. With the <code>u</code> tag, the browser applies the CSS of <code>text-decoration: underline;</code> to the element.",
         "<hr>",
-        "Wrap the <code>u</code> tag around the text \"Ph.D. students\". It should not include the parent <code>div</code> that has the class of <code>cardText</code>.",
+        "Wrap the <code>u</code> tag only around the text \"Ph.D. students\".",
         "<strong>Note</strong><br>Try to avoid using the <code>u</code> tag when it could be confused for a link. Anchor tags also have a default underlined formatting."
       ],
       "tests": [
@@ -321,12 +327,6 @@
             "The <code>u</code> tag should wrap around the text \"Ph.D. students\".",
           "testString":
             "assert($('u').text() === 'Ph.D. students', 'The <code>u</code> tag should wrap around the text \"Ph.D. students\".');"
-        },
-        {
-          "text":
-            "The <code>u</code> tag should not wrap around the parent <code>div</code> tag.",
-          "testString":
-            "assert($('u').children('div').length === 0, 'The <code>u</code> tag should not wrap around the parent <code>div</code> tag.');"
         }
       ],
       "solutions": [],
@@ -334,6 +334,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cN6aQCL",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -410,6 +411,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cVJRBtp",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -462,24 +464,23 @@
     },
     {
       "id": "587d781b367417b2b2512aba",
-      "title": "Use the del Tag to Strikethrough Text",
+      "title": "Use the s Tag to Strikethrough Text",
       "description": [
-        "To strikethrough text, which is when a horizontal line cuts across the characters, you can use the <code>del</code> tag. It shows that a section of text is no longer valid. With the <code>del</code> tag, the browser applies the CSS of <code>text-decoration: line-through;</code> to the element.",
+        "To strikethrough text, which is when a horizontal line cuts across the characters, you can use the <code>s</code> tag. It shows that a section of text is no longer valid. With the <code>s</code> tag, the browser applies the CSS of <code>text-decoration: line-through;</code> to the element.",
         "<hr>",
-        "Wrap the <code>del</code> tag around \"Google\" inside the <code>h4</code> tag and then add the word Alphabet beside it, which should not have the strikethrough formatting."
+        "Wrap the <code>s</code> tag around \"Google\" inside the <code>h4</code> tag and then add the word Alphabet beside it, which should not have the strikethrough formatting."
       ],
       "tests": [
         {
-          "text":
-            "Your code should add one <code>del</code> tag to the markup.",
+          "text": "Your code should add one <code>s</code> tag to the markup.",
           "testString":
-            "assert($('del').length == 1, 'Your code should add one <code>del</code> tag to the markup.');"
+            "assert($('s').length == 1, 'Your code should add one <code>s</code> tag to the markup.');"
         },
         {
           "text":
-            "A <code>del</code> tag should wrap around the Google text in the <code>h4</code> tag. It should not contain the word Alphabet.",
+            "A <code>s</code> tag should wrap around the Google text in the <code>h4</code> tag. It should not contain the word Alphabet.",
           "testString":
-            "assert($('del').text().match(/Google/gi) && !$('del').text().match(/Alphabet/gi), 'A <code>del</code> tag should wrap around the Google text in the <code>h4</code> tag. It should not contain the word Alphabet.');"
+            "assert($('s').text().match(/Google/gi) && !$('s').text().match(/Alphabet/gi), 'A <code>s</code> tag should wrap around the Google text in the <code>h4</code> tag. It should not contain the word Alphabet.');"
         },
         {
           "text":
@@ -493,6 +494,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -529,7 +531,7 @@
             "  <div class=\"cardContent\">",
             "    <div class=\"cardText\">",
             "      <h4>Google</h4>",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -562,7 +564,7 @@
           "text":
             "The <code>hr</code> tag should come between the title and the paragraph.",
           "testString":
-            "assert(code.match(/<\\/h4>\\s*?<hr(>|\\s*?\\/>)\\s*?<em>/gi), 'The <code>hr</code> tag should come between the title and the paragraph.');"
+            "assert(code.match(/<\\/h4>\\s*?<hr(>|\\s*?\\/>)\\s*?<p>/gi), 'The <code>hr</code> tag should come between the title and the paragraph.');"
         }
       ],
       "solutions": [],
@@ -570,6 +572,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c3bR8t7",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -605,9 +608,9 @@
             "<div class=\"fullCard\">",
             "  <div class=\"cardContent\">",
             "    <div class=\"cardText\">",
-            "      <h4><del>Google</del>Alphabet</h4>",
+            "      <h4><s>Google</s>Alphabet</h4>",
             "      ",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -658,6 +661,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cEDqwA6",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -697,7 +701,7 @@
             "    <div class=\"cardText\">",
             "      <h4>Alphabet</h4>",
             "      <hr>",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -732,6 +736,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c3bRPTz",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -771,7 +776,7 @@
             "    <div class=\"cardText\">",
             "      <h4>Alphabet</h4>",
             "      <hr>",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -810,11 +815,14 @@
             "assert(code.match(/box-shadow:\\s*?0\\s+?10px\\s+?20px\\s+?rgba\\(\\s*?0\\s*?,\\s*?0\\s*?,\\s*?0\\s*?,\\s*?0?\\.19\\),\\s*?0\\s+?6px\\s+?6px\\s+?rgba\\(\\s*?0\\s*?,\\s*?0\\s*?,\\s*?0\\s*?,\\s*?0?\\.23\\)/gi), 'You should use the given CSS for the <code>box-shadow</code> value.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"#thumbnail {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cvVZdUd",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -857,7 +865,7 @@
             "    <div class=\"cardText\">",
             "      <h4>Alphabet</h4>",
             "      <hr>",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -894,6 +902,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c7aKqu4",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -937,7 +946,7 @@
             "    <div class=\"cardText\">",
             "      <h4>Alphabet</h4>",
             "      <hr>",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -978,6 +987,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cvVZQSP",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1022,7 +1032,7 @@
             "    <div class=\"cardText\">",
             "      <h4>Alphabet</h4>",
             "      <hr>",
-            "      <em><p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p></em>",
+            "      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>",
             "    </div>",
             "    <div class=\"cardLinks\">",
             "      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>",
@@ -1087,6 +1097,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cPpQNT3",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1165,6 +1176,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/crVWRHq",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1230,6 +1242,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cVJ36Cr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1271,6 +1284,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/crVWdcv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1321,6 +1335,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cakRGcm",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1373,6 +1388,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/czVmMtZ",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1424,6 +1440,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c9bQEA4",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1484,6 +1501,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cyLJ7c3",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1521,7 +1539,7 @@
       "title": "Lock an Element to the Browser Window with Fixed Positioning",
       "description": [
         "The next layout scheme that CSS offers is the <code>fixed</code> position, which is a type of absolute positioning that locks an element relative to the browser window. Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. Other items no longer \"realize\" where it is positioned, which may require some layout adjustments elsewhere.",
-        "One key difference from the <code>absolute</code> position is that the element won't move when the user scrolls.",
+        "One key difference between the <code>fixed</code> and <code>absolute</code> positions is that an element with a fixed position won't move when the user scrolls.",
         "<hr>",
         "The navigation bar in the code is labeled with an id of <code>navbar</code>. Change its <code>position</code> to <code>fixed</code>, and offset it 0 pixels from the <code>top</code> and 0 pixels from the <code>left</code>. Notice the (lack of) impact to the <code>h1</code> position, it hasn't been pushed down to accommodate the navigation bar and would need to be adjusted separately."
       ],
@@ -1550,6 +1568,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c2MDNUR",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1621,6 +1640,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c2MDqu2",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1684,6 +1704,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cM94aHk",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1736,11 +1757,14 @@
             "assert(code.match(/margin:\\s*?auto;/g), 'The <code>div</code> should have a <code>margin</code> set to auto.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"div {background-color: blue; height: 100px; width: 100px; margin: auto;}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cyLJqU4",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1770,6 +1794,7 @@
         "The color wheel is a useful tool to visualize how colors relate to each other - it's a circle where similar hues are neighbors and different hues are farther apart. When two colors are opposite each other on the wheel, they are called complementary colors. They have the characteristic that if they are combined, they \"cancel\" each other out and create a gray color. However, when placed side-by-side, these colors appear more vibrant and produce a strong visual contrast.",
         "Some examples of complementary colors with their hex codes are:",
         "<blockquote>red (#FF0000) and cyan (#00FFFF)<br>green (#00FF00) and magenta (#FF00FF)<br>blue (#0000FF) and yellow (#FFFF00)</blockquote>",
+        "This is different than the outdated RYB color model that many of us were taught in school, which has different primary and complementary colors. Modern color theory uses the additive RGB model (like on a computer screen) and the subtractive CMY(K) model (like in printing). Read <a href='https://en.wikipedia.org/wiki/Color_model' target='_blank'>here</a> for more information on this complex subject.",
         "There are many color picking tools available online that have an option to find the complement of a color.",
         "<strong>Note</strong><br>For all color challenges: Using color can be a powerful way to add visual interest to a page. However, color alone should not be used as the only way to convey important information because users with visual impairments may not understand that content. This issue will be covered in more detail in the Applied Accessibility challenges.",
         "<hr>",
@@ -1794,6 +1819,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c2MD3Tr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1861,6 +1887,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c3bRDAb",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1939,6 +1966,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cWmPpud",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1982,7 +2010,7 @@
             "  </article>",
             "</main>",
             "<br>",
-            "<footer>&copy;2016 FCC Kitchen</footer>"
+            "<footer>&copy; 2018 FCC Kitchen</footer>"
           ],
           "head": [],
           "tail": []
@@ -2045,6 +2073,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cPp38TZ",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2100,11 +2129,14 @@
             "assert(code.match(/nav\\s*?{\\s*?background-color:\\s*?hsl\\(180,\\s*?80%,\\s*?25%\\)/gi), 'The <code>nav</code> element should have a <code>background-color</code> of the adjusted cyan tone using the <code>hsl()</code> property.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"nav {background-color: hsl(180, 80%, 25%);}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cEDJvT7",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2146,9 +2178,9 @@
             "  <h1>Cooking with FCC!</h1>",
             "  <nav>",
             "    <ul>",
-            "      <li><a href=\"\">Home</a></li>",
-            "      <li><a href=\"\">Classes</a></li>",
-            "      <li><a href=\"\">Contact</a></li>",
+            "      <li><a href=\"#\">Home</a></li>",
+            "      <li><a href=\"#\">Classes</a></li>",
+            "      <li><a href=\"#\">Contact</a></li>",
             "    </ul>",
             "  </nav>",
             "</header>"
@@ -2179,11 +2211,14 @@
             "assert(code.match(/background:\\s*?linear-gradient\\(35deg,\\s*?(#CCFFFF|#CFF),\\s*?(#FFCCCC|#FCC)\\);/gi), 'The <code>div</code> element should have a <code>linear-gradient</code> <code>background</code> with the specified direction and colors.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"<style> div{border-radius: 20px; width: 70%; height: 400px; margin: 50px auto; background: linear-gradient(35deg, #cff, #fcc);}</style><div></div>\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cg4dpt9",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2238,7 +2273,7 @@
         {
           "text": "The color stop at 0 pixels should be <code>yellow</code>.",
           "testString":
-            "assert(code.match(/yellow\\s+?0px/gi), 'The color stop at 0 pixels should be <code>yellow</code>.');"
+            "assert(code.match(/yellow\\s+?0(px)?/gi), 'The color stop at 0 pixels should be <code>yellow</code>.');"
         },
         {
           "text": "One color stop at 40 pixels should be <code>yellow</code>.",
@@ -2258,11 +2293,14 @@
             "assert(code.match(/black\\s+?80px/gi), 'The last color stop at 80 pixels should be <code>black</code>.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"background: repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px, black 80px);\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c6bmQh2",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2308,16 +2346,19 @@
           "text":
             "Your <code>body</code> element should have a <code>background</code> property set to a <code>url()</code> with the given link.",
           "testString":
-            "assert(code.match(/background:\\s*?url\\((\"|')https:\\/\\/i\\.imgur\\.com\\/MJAkxbh\\.png(\"|')\\)/gi), 'Your <code>body</code> element should have a <code>background</code> property set to a <code>url()</code> with the given link.');"
+            "assert(code.match(/background:\\s*?url\\(\\s*(\"|'|)https:\\/\\/i\\.imgur\\.com\\/MJAkxbh\\.png\\1\\s*\\)/gi), 'Your <code>body</code> element should have a <code>background</code> property set to a <code>url()</code> with the given link.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"body {background: url('https://i.imgur.com/MJAkxbh.png')}\""
+      ],
       "hints": [
         "Remember to wrap the address in quotes within the url() function."
       ],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cQdwJC8",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2347,11 +2388,14 @@
             "assert(code.match(/#ball2\\s*?{\\s*?left:\\s*?65%;\\s*?transform:\\s*?scale\\(1\\.5\\);\\s*?}|#ball2\\s*?{\\s*?transform:\\s*?scale\\(1\\.5\\);\\s*?left:\\s*?65%;\\s*?}/gi), 'Set the <code>transform</code> property for <code>#ball2</code> to scale it 1.5 times its size.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"#ball2 {left: 65%; transform: scale(1.5);}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c2MZVSg",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2409,13 +2453,14 @@
             "assert(code.match(/div:hover\\s*?{\\s*?transform:\\s*?scale\\(1\\.1\\);/gi), 'The size of the <code>div</code> element should scale 1.1 times when the user hovers over it.');"
         }
       ],
-      "solutions": [],
+      "solutions": ["var code = \"div:hover {transform: scale(1.1);}\""],
       "hints": [
         "Make sure to apply the CSS rule to the hover state of the div, using div:hover"
       ],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cyLPJuM",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2464,13 +2509,16 @@
             "assert(code.match(/#bottom\\s*?{\\s*?.*?\\s*?transform:\\s*?skewX\\(24deg\\);/g), 'The element with id <code>bottom</code> should be skewed by 24 degrees along its X-axis.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"#bottom {background-color: blue; transform: skewX(24deg);}\""
+      ],
       "hints": [
         "Notice that there is no space between the number and \"deg\" (-32deg) when declaring the degrees value."
       ],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cyLP8Sr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2517,11 +2565,14 @@
             "assert(code.match(/#top\\s*?{\\s*?.*?\\s*?transform:\\s*?skewY\\(-10deg\\);/g), 'The element with id <code>top</code> should be skewed by -10 degrees along its Y-axis.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"#top {background-color: red; transform: skewY(-10deg);}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c2MZ2uB",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2583,11 +2634,14 @@
             "assert(code.match(/box-shadow:\\s*?25px\\s+?10px\\s+?0(px)?\\s+?0(px)?\\s+?blue\\s*?;/gi), 'The value of the <code>box-shadow</code> property should be set to 25px for <code>offset-x</code>, 10px for <code>offset-y</code>, 0 for <code>blur-radius</code>, 0 for <code>spread-radius</code>, and finally blue for the color.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \".center {background-color: transparent; border-radius: 50%; box-shadow: 25px 10px 0px 0 blue;}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cEDWPs6",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2623,46 +2677,49 @@
       "id": "587d78a6367417b2b2512ade",
       "title": "Create a More Complex Shape Using CSS and HTML",
       "description": [
-        "One of the most popular shapes in the world is the heart shape, and this challenge creates it with raw CSS. But first, you need to understand the <code>:before</code> and <code>:after</code> selectors. These selectors are used to add something before or after a selected element. In the following example, a <code>:before</code> selector is used to add a rectangle to an element with the class <code>heart</code>:",
-        "<blockquote>.heart:before {<br>&nbsp;&nbsp;content: \"\";<br>&nbsp;&nbsp;background-color: yellow;<br>&nbsp;&nbsp;border-radius: 25%;<br>&nbsp;&nbsp;position: absolute;<br>&nbsp;&nbsp;height: 50px;<br>&nbsp;&nbsp;width: 70px;<br>&nbsp;&nbsp;top: -50px;<br>&nbsp;&nbsp;left: 5px;<br>}</blockquote>",
-        "For the <code>:before</code> and <code>:after</code> selectors to function properly, they must have a defined <code>content</code> property. It usually has content such as a photo or text. When the <code>:before</code> and <code>:after</code> selectors add shapes, the <code>content</code> property is still required, but it's set to an empty string.",
-        "In the above example, the element with the class of <code>heart</code> has a <code>:before</code> selector that produces a yellow rectangle with <code>height</code> and <code>width</code> of 50px and 70px, respectively. This rectangle has round corners due to its 25% border radius and is positioned absolutely at 5px from the <code>left</code> and 50px above the <code>top</code> of the element.",
+        "One of the most popular shapes in the world is the heart shape, and in this challenge you'll create one using pure CSS. But first, you need to understand the <code>::before</code> and <code>::after</code> pseudo-elements. These pseudo-elements are used to add something before or after a selected element. In the following example, a <code>::before</code> pseudo-element is used to add a rectangle to an element with the class <code>heart</code>:",
+        "<blockquote>.heart::before {<br>&nbsp;&nbsp;content: \"\";<br>&nbsp;&nbsp;background-color: yellow;<br>&nbsp;&nbsp;border-radius: 25%;<br>&nbsp;&nbsp;position: absolute;<br>&nbsp;&nbsp;height: 50px;<br>&nbsp;&nbsp;width: 70px;<br>&nbsp;&nbsp;top: -50px;<br>&nbsp;&nbsp;left: 5px;<br>}</blockquote>",
+        "For the <code>::before</code> and <code>::after</code> pseudo-elements to function properly, they must have a defined <code>content</code> property. This property is usually used to add things like a photo or text to the selected element. When the <code>::before</code> and <code>::after</code> pseudo-elements are used to make shapes, the <code>content</code> property is still required, but it's set to an empty string.",
+        "In the above example, the element with the class of <code>heart</code> has a <code>::before</code> pseudo-element that produces a yellow rectangle with <code>height</code> and <code>width</code> of 50px and 70px, respectively. This rectangle has round corners due to its 25% border radius and is positioned absolutely at 5px from the <code>left</code> and 50px above the <code>top</code> of the element.",
         "<hr>",
-        "Transform the element on the screen to a heart. In the <code>heart:after</code> selector, change the <code>background-color</code> to pink and the <code>border-radius</code> to 50%.",
+        "Transform the element on the screen to a heart. In the <code>heart::after</code> selector, change the <code>background-color</code> to pink and the <code>border-radius</code> to 50%.",
         "Next, target the element with the class <code>heart</code> (just <code>heart</code>) and fill in the <code>transform</code> property. Use the <code>rotate()</code> function with -45 degrees. (<code>rotate()</code> works the same way that <code>skewX()</code> and <code>skewY()</code> do).",
-        "Finally, in the <code>heart:before</code> selector, set its <code>content</code> property to an empty string."
+        "Finally, in the <code>heart::before</code> selector, set its <code>content</code> property to an empty string."
       ],
       "tests": [
         {
           "text":
-            "The <code>background-color</code> property of the <code>heart:after</code> selector should be pink.",
+            "The <code>background-color</code> property of the <code>heart::after</code> selector should be pink.",
           "testString":
-            "assert(code.match(/\\.heart:after\\s*?{\\s*?background-color:\\s*?pink;/gi), 'The <code>background-color</code> property of the <code>heart:after</code> selector should be pink.');"
+            "assert(code.match(/\\.heart::after\\s*?{\\s*?background-color\\s*?:\\s*?pink\\s*?;/gi), 'The <code>background-color</code> property of the <code>heart::after</code> selector should be pink.');"
         },
         {
           "text":
-            "The <code>border-radius</code> of the <code>heart:after</code> selector should be 50%.",
+            "The <code>border-radius</code> of the <code>heart::after</code> selector should be 50%.",
           "testString":
-            "assert(code.match(/border-radius:\\s*?50%/gi).length == 2, 'The <code>border-radius</code> of the <code>heart:after</code> selector should be 50%.');"
+            "assert(code.match(/border-radius\\s*?:\\s*?50%/gi).length == 2, 'The <code>border-radius</code> of the <code>heart::after</code> selector should be 50%.');"
         },
         {
           "text":
             "The <code>transform</code> property for the <code>heart</code> class should use a <code>rotate()</code> function set to -45 degrees.",
           "testString":
-            "assert(code.match(/transform:\\s*?rotate\\(-45deg\\)/gi), 'The <code>transform</code> property for the <code>heart</code> class should use a <code>rotate()</code> function set to -45 degrees.');"
+            "assert(code.match(/transform\\s*?:\\s*?rotate\\(\\s*?-45deg\\s*?\\)/gi), 'The <code>transform</code> property for the <code>heart</code> class should use a <code>rotate()</code> function set to -45 degrees.');"
         },
         {
           "text":
-            "The <code>content</code> of the <code>heart:before</code> selector should be an empty string.",
+            "The <code>content</code> of the <code>heart::before</code> selector should be an empty string.",
           "testString":
-            "assert(code.match(/\\.heart:before\\s*?{\\s*?content:\\s*?(\"|')\\1;/gi), 'The <code>content</code> of the <code>heart:before</code> selector should be an empty string.');"
+            "assert(code.match(/\\.heart::before\\s*?{\\s*?content\\s*?:\\s*?(\"|')\\1\\s*?;/gi), 'The <code>content</code> of the <code>heart::before</code> selector should be an empty string.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \".heart {transform: rotate(-45deg);} .heart::after {background-color: pink; border-radius: 50%;} .heart::before {content: \\\"\\\"; border-radius: 50%;}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cPpz4fr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2682,7 +2739,7 @@
             "  width: 50px;",
             "  transform: ;",
             "}",
-            ".heart:after {",
+            ".heart::after {",
             "  background-color: blue;",
             "  content: \"\";",
             "  border-radius: 25%;",
@@ -2692,7 +2749,7 @@
             "  top: 0px;",
             "  left: 25px;",
             "}",
-            ".heart:before {",
+            ".heart::before {",
             "  content: ;",
             "  background-color: pink;",
             "  border-radius: 50%;",
@@ -2766,6 +2823,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cakprhv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2827,6 +2885,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cg4vZAa",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2874,10 +2933,13 @@
             "assert(code.match(/button\\s*?:\\s*?hover\\s*?{[\\s\\S]*animation-fill-mode\\s*?:\\s*?forwards\\s*?;[\\s\\S]*}/gi) && code.match(/button\\s*?:\\s*?hover\\s*?{[\\s\\S]*animation-name\\s*?:\\s*?background-color\\s*?;[\\s\\S]*}/gi) && code.match(/button\\s*?:\\s*?hover\\s*?{[\\s\\S]*animation-duration\\s*?:\\s*?500ms\\s*?;[\\s\\S]*}/gi), '<code>button:hover</code> should have a <code>animation-fill-mode</code> property with a value of <code>forwards</code>.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"button:hover {animation-name: background-color; animation-duration: 500ms; animation-fill-mode: forwards;}\""
+      ],
       "hints": [],
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cVJDmcE",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2926,7 +2988,7 @@
           "text":
             "The <code>@keyframes</code> rule for <code>0%</code> should use the <code>left</code> offset of 0px.",
           "testString":
-            "assert(code.match(/0%\\s*?{\\s*?background-color:\\s*?blue;\\s*?top:\\s*?0px;\\s*?left:\\s*?0px;\\s*?}/gi), 'The <code>@keyframes</code> rule for <code>0%</code> should use the <code>left</code> offset of 0px.');"
+            "assert(code.match(/0%\\s*?{\\s*?background-color:\\s*?blue;\\s*?top:\\s*?0(px)?;\\s*?left:\\s*?0(px)?;\\s*?}/gi), 'The <code>@keyframes</code> rule for <code>0%</code> should use the <code>left</code> offset of 0px.');"
         },
         {
           "text":
@@ -2938,14 +3000,17 @@
           "text":
             "The <code>@keyframes</code> rule for <code>100%</code> should use the <code>left</code> offset of -25px.",
           "testString":
-            "assert(code.match(/100%\\s*?{\\s*?background-color:\\s*?yellow;\\s*?top:\\s*?0px;\\s*?left:\\s*?-25px;\\s*?}/gi), 'The <code>@keyframes</code> rule for <code>100%</code> should use the <code>left</code> offset of -25px.');"
+            "assert(code.match(/100%\\s*?{\\s*?background-color:\\s*?yellow;\\s*?top:\\s*?0(px)?;\\s*?left:\\s*?-25px;\\s*?}/gi), 'The <code>@keyframes</code> rule for <code>100%</code> should use the <code>left</code> offset of -25px.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"@keyframes rainbow {0% {background-color: blue; top: 0px; left: 0px;} 50% {background-color: green; top: 50px; left: 25px;} 100% {background-color: yellow; top: 0px; left:-25px;}}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c7amZfW",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3011,11 +3076,14 @@
             "assert(code.match(/@keyframes fade\\s*?{\\s*?50%\\s*?{\\s*?(?:left:\\s*?60%;\\s*?opacity:\\s*?0?\\.1;|opacity:\\s*?0?\\.1;\\s*?left:\\s*?60%;)/gi), 'The <code>keyframes</code> rule for fade should set the <code>opacity</code> property to 0.1 at 50%.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"@keyframes fade {50% { left: 60%; opacity: 0.1;}}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cGJqqAE",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3079,6 +3147,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cVJDVfq",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3152,6 +3221,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cDZpDUr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3250,13 +3320,16 @@
             "assert(code.match(/twinkle-1\\s*?{\\s*?50%/g), 'The <code>@keyframes</code> rule for the <code>star-1</code> class should be 50%.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"@keyframes twinkle-1 {50% {transform: scale(0.5); opacity: 0.5;}}\""
+      ],
       "hints": [
         "Check the animation-name declared in the star-1 class to find the right @keyframes rule to change."
       ],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cZ89WA4",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3355,6 +3428,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cnpWZc9",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3448,6 +3522,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cJKvwCM",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3530,6 +3605,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c9bDrs8",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3588,7 +3664,7 @@
         "A previous challenge discussed the <code>ease-out</code> keyword that describes an animation change that speeds up first and then slows down at the end of the animation. On the right, the difference between the <code>ease-out</code> keyword (for the blue element) and <code>linear</code> keyword (for the red element) is demonstrated. Similar animation progressions to the <code>ease-out</code> keyword can be achieved by using a custom cubic Bezier curve function.",
         "In general, changing the <code>p1</code> and <code>p2</code> anchor points drives the creation of different Bezier curves, which controls how the animation progresses through time. Here's an example of a Bezier curve using values to mimic the ease-out style:",
         "<code>animation-timing-function: cubic-bezier(0, 0, 0.58, 1);</code>",
-        "Remember that all <code>cubic-bezier</code> functions start with <code>p0</code> at (0, 0) and end with <code>p3</code> at (1, 1). In this example, the curve moves faster through the Y-axis (starts at 0, goes to <code>p1</code> y value of 0, then goes to <code>p2</code> y value of 1) then it moves through the X-axis (0 to start, then 0 for <code>p1</code>, up to 0.58 for <code>p2</code>). As a result, the change in the animated element progresses faster than the time of the animation for that segment. Towards the end of the curve, the relationship between the change in x and y values reverses - the y value moves from 1 to 1 (no change), and the x values move from 0.58 to 1, making the animation changes progress slower compared to the animation duration.",
+        "Remember that all <code>cubic-bezier</code> functions start with <code>p0</code> at (0, 0) and end with <code>p3</code> at (1, 1). In this example, the curve moves faster through the Y-axis (starts at 0, goes to <code>p1</code> y value of 0, then goes to <code>p2</code> y value of 1) than it moves through the X-axis (0 to start, then 0 for <code>p1</code>, up to 0.58 for <code>p2</code>). As a result, the change in the animated element progresses faster than the time of the animation for that segment. Towards the end of the curve, the relationship between the change in x and y values reverses - the y value moves from 1 to 1 (no change), and the x values move from 0.58 to 1, making the animation changes progress slower compared to the animation duration.",
         "<hr>",
         "To see the effect of this Bezier curve in action, change the <code>animation-timing-function</code> of the element with id of <code>red</code> to a <code>cubic-bezier</code> function with x1, y1, x2, y2 values set respectively to 0, 0, 0.58, 1. This will make both elements progress through the animation similarly."
       ],
@@ -3617,6 +3693,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c6bnRCK",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3686,6 +3763,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c7akWUv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -3695,7 +3773,6 @@
             "<style>",
             "  .balls {",
             "    border-radius: 50%;",
-            "    top: 249px;",
             "    position: fixed;  ",
             "    width: 50px;",
             "    height: 50px;",

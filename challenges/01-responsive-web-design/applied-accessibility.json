@@ -29,6 +29,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cPp7VfD",
       "guideUrl":
         "https://guide.freecodecamp.org/certificates/add-alt-text-to-an-image-for-accessibility",
       "files": {
@@ -73,6 +74,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cM9P4t2",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -129,6 +131,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cqVEktm",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -184,6 +187,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cPp7zuE",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -232,6 +236,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cPp79S3",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -304,6 +309,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/czVwWSv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -378,6 +384,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cB76vtv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -444,7 +451,7 @@
           "text":
             "Your code should have an opening and closing <code>footer</code> tag.",
           "testString":
-            "assert(code.match(/<footer>\\s*&copy; 2016 Camper Cat\\s*<\\/footer>/g), 'Your code should have an opening and closing <code>footer</code> tag.');"
+            "assert(code.match(/<footer>\\s*&copy; 2018 Camper Cat\\s*<\\/footer>/g), 'Your code should have an opening and closing <code>footer</code> tag.');"
         }
       ],
       "solutions": [],
@@ -452,6 +459,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/crVrDh8",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -488,7 +496,7 @@
             "  </main>",
             "",
             "",
-            "  <div>&copy; 2016 Camper Cat</div>",
+            "  <div>&copy; 2018 Camper Cat</div>",
             "",
             "",
             "</body>"
@@ -521,7 +529,7 @@
           "text":
             "Make sure your <code>audio</code> element has a closing tag.",
           "testString":
-            "assert(code.match(/<\\/audio>/g) && code.match(/<audio controls>/g) && code.match(/<\\/audio>/g).length === code.match(/<audio controls>/g).length, 'Make sure your <code>audio</code> element has a closing tag.');"
+            "assert(code.match(/<\\/audio>/g).length === 1 && code.match(/<audio.*>[\\s\\S]*<\\/audio>/g), 'Make sure your <code>audio</code> element has a closing tag.');"
         },
         {
           "text":
@@ -558,6 +566,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cVJVkcZ",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -631,6 +640,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cGJMqtE",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -676,7 +686,7 @@
             "      <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>",
             "    </section>",
             "  </main>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -715,6 +725,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cGJMMAN",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -751,7 +762,7 @@
             "    <h2>Is Chuck Norris a Cat Person?</h2>",
             "    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>",
             "  </article>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -770,7 +781,7 @@
         "Here's an example:",
         "<blockquote>&lt;form&gt;<br>&nbsp;&nbsp;&lt;fieldset&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Choose one of these three items:&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id=&quot;one&quot; type=&quot;radio&quot; name=&quot;items&quot; value=&quot;one&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;one&quot;&gt;Choice One&lt;/label&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id=&quot;two&quot; type=&quot;radio&quot; name=&quot;items&quot; value=&quot;two&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;two&quot;&gt;Choice Two&lt;/label&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id=&quot;three&quot; type=&quot;radio&quot; name=&quot;items&quot; value=&quot;three&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;three&quot;&gt;Choice Three&lt;/label&gt;<br>&nbsp;&nbsp;&lt;/fieldset&gt;<br>&lt;/form&gt;<br></blockquote>",
         "<hr>",
-        "Camper Cat wants information about the ninja level of his users when they sign up for his email list. He's added a set of radio buttons, and learned from our last lesson to use label tags with <code>for</code> attributes for each choice. Go Camper Cat! However, his code still needs some help. Change the div tag surrounding the radio buttons to a fieldset tag, and change the p tag inside it to a legend."
+        "Camper Cat wants information about the ninja level of his users when they sign up for his email list. He's added a set of radio buttons, and learned from our last lesson to use label tags with <code>for</code> attributes for each choice. Go Camper Cat! However, his code still needs some help. Change the <code>div</code> tag surrounding the radio buttons to a <code>fieldset</code> tag, and change the <code>p</code> tag inside it to a <code>legend</code>."
       ],
       "tests": [
         {
@@ -808,6 +819,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cVJVefw",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -855,7 +867,7 @@
             "    <h2>Is Chuck Norris a Cat Person?</h2>",
             "    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>",
             "  </article>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -906,6 +918,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cD9DJHr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -933,7 +946,7 @@
             "      </form>",
             "    </section>",
             "  </main>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -981,6 +994,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cmzMgtz",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1016,7 +1030,7 @@
             "      </article>",
             "    </section>",
             "  </article>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -1072,6 +1086,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c8azdfM",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1160,7 +1175,7 @@
             "    <article><h3>Swords: the best tool to literally divide and conquer</h3></article>",
             "    <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>",
             "  </section>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -1196,6 +1211,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cKb3nCq",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1251,11 +1267,14 @@
             "assert(code.match(/background-color:\\s*?hsl\\(120,\\s*?25%,\\s*?55%\\)/gi), 'Your code should only change the lightness value for the <code>background-color</code> property to a value of 55%.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"body {color: hsl(0, 55%, 15%); background-color: hsl(120, 25%, 55%);}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cmzMEUw",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1310,6 +1329,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c437as3",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1365,6 +1385,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/c437DcV",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1428,6 +1449,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cQvmaTp",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1454,7 +1476,7 @@
             "    ",
             "    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>",
             "  </article>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -1492,6 +1514,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cmzMDHW",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1543,7 +1566,7 @@
             "      <input type=\"submit\" name=\"submit\" value=\"Submit\">",
             "    </form><br>",
             "  </section>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],
@@ -1596,6 +1619,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/c/cmzRRcb",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1631,7 +1655,7 @@
             "    <p>&ldquo;Wise men say forgiveness is divine, but never pay full price for late pizza.&rdquo;<br>",
             "    - TMNT</p>",
             "  </blockquote>",
-            "  <footer>&copy; 2016 Camper Cat</footer>",
+            "  <footer>&copy; 2018 Camper Cat</footer>",
             "</body>"
           ],
           "head": [],

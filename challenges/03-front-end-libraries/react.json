@@ -964,7 +964,7 @@
         "<blockquote>const Welcome = (props) => &lt;h1&gt;Hello, {props.user}!&lt;/h1&gt;</blockquote>",
         "It is standard to call this value <code>props</code> and when dealing with stateless functional components, you basically consider it as an argument to a function which returns JSX. You can access the value of the argument in the function body. With class components, you will see this is a little different.",
         "<hr>",
-        "There is a <code>Calendar</code> and <code>CurrentDate</code> component in the code editor. When rendering <code>CurrentDate</code> from the <code>Calendar</code> component, pass in a property of <code>date</code> assigned to the current date from JavaScript's <code>Date</code> object. Then access this <code>prop</code> in the <code>CurrentDate</code> component, showing its value within the <code>p</code> tags. Note that for <code>prop</code> values to be evaluated as JavaScript, they must be enclosed in curly brackets, for instance <code>date={Date()}</code>."
+        "There are <code>Calendar</code> and <code>CurrentDate</code> components in the code editor. When rendering <code>CurrentDate</code> from the <code>Calendar</code> component, pass in a property of <code>date</code> assigned to the current date from JavaScript's <code>Date</code> object. Then access this <code>prop</code> in the <code>CurrentDate</code> component, showing its value within the <code>p</code> tags. Note that for <code>prop</code> values to be evaluated as JavaScript, they must be enclosed in curly brackets, for instance <code>date={Date()}</code>."
       ],
       "files": {
         "indexjsx": {
@@ -2080,7 +2080,7 @@
       "title": "Create a Controlled Input",
       "releasedOn": "December 25, 2017",
       "description": [
-        "Your application may have more complex interactions between <code>state</code> and the rendered UI. For example, form control elements for text input, such as <code>input</code> and <code>textarea</code>, maintain their own state in the DOM as the user types. With React, you can move this mutatable state into a React component's <code>state</code>. The user's input becomes part of the application <code>state</code>, so React controls the value of that input field. Typically, if you have React components with input fields the user can type into, it will be a controlled input form.",
+        "Your application may have more complex interactions between <code>state</code> and the rendered UI. For example, form control elements for text input, such as <code>input</code> and <code>textarea</code>, maintain their own state in the DOM as the user types. With React, you can move this mutable state into a React component's <code>state</code>. The user's input becomes part of the application <code>state</code>, so React controls the value of that input field. Typically, if you have React components with input fields the user can type into, it will be a controlled input form.",
         "<hr>",
         "The code editor has the skeleton of a component called <code>ControlledInput</code> to create a controlled <code>input</code> element. The component's <code>state</code> is already initialized with an <code>input</code> property that holds an empty string. This value represents the text a user types into the <code>input</code> field.",
         "First, create a method called <code>handleChange()</code> that has a parameter called <code>event</code>. When the method is called, it receives an <code>event</code> object that contains a string of text from the <code>input</code> element. You can access this string with <code>event.target.value</code> inside the method. Update the <code>input</code> property of the component's <code>state</code> with this new string.",
@@ -2575,7 +2575,7 @@
           "text":
             "The <code>h1</code> tag should render the <code>activeUsers</code> value from <code>MyComponent</code>&apos;s state.",
           "testString":
-            "async () => { const waitForIt = (fn) => new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250)); const mockedComponent = Enzyme.mount(React.createElement(MyComponent)); const first = () => { mockedComponent.setState({ activeUsers: 1237 }); return waitForIt(() => mockedComponent.find('h1').text()); }; const second = () => { mockedComponent.setState({ activeUsers: 1000 }); return waitForIt(() => mockedComponent.find('h1').text()); }; const firstValue = await first(); const secondValue = await second(); assert(new RegExp('1237').test(firstValue) && new RegExp('1000').test(secondValue), 'The <code>h1</code> tag should render the <code>activeUsers</code> value from <code>MyComponent</code>&apos;s state.'); }; "
+            "async () => { const mockedComponent = Enzyme.mount(React.createElement(MyComponent)); const first = () => { mockedComponent.setState({ activeUsers: 1237 }); return mockedComponent.find('h1').text(); }; const second = () => { mockedComponent.setState({ activeUsers: 1000 }); return mockedComponent.find('h1').text(); }; assert(new RegExp('1237').test(first()) && new RegExp('1000').test(second()), 'The <code>h1</code> tag should render the <code>activeUsers</code> value from <code>MyComponent</code>&apos;s state.'); }; "
         }
       ],
       "solutions": [
@@ -2880,7 +2880,7 @@
       "title": "Introducing Inline Styles",
       "releasedOn": "December 25, 2017",
       "description": [
-        "There are other complex concepts that add powerful capabilities to your React code. But you may be wondering about the more simple problem of how to style those JSX elements you create in React. You likely know that it won't be exactly the same as working with HTML because of <a target=\"_blank\" href=\"define-an-html-class-in-jsx\"> the way you apply classes to JSX elements</a>.",
+        "There are other complex concepts that add powerful capabilities to your React code. But you may be wondering about the more simple problem of how to style those JSX elements you create in React. You likely know that it won't be exactly the same as working with HTML because of <a target=\"_blank\" href=\"front-end-libraries/react/define-an-html-class-in-jsx\"> the way you apply classes to JSX elements</a>.",
         "If you import styles from a stylesheet, it isn't much different at all. You apply a class to your JSX element using the <code>className</code> attribute, and apply styles to the class in your stylesheet. Another option is to apply <strong><em>inline</em></strong> styles, which are very common in ReactJS development.",
         "You apply inline styles to JSX elements similar to how you do it in HTML, but with a few JSX differences. Here's an example of an inline style in HTML:",
         "<code>&lt;div style=\"color: yellow; font-size: 16px\"&gt;Mellow Yellow&lt;/div&gt;</code>",
@@ -3168,10 +3168,10 @@
       "title": "Render with an If/Else Condition",
       "releasedOn": "December 25, 2017",
       "description": [
-        "Another application of using JavaScript to control your rendered view is to tie the elements that are rendered to a condition. When the condition is true, one view renders, when it's false, it's a different view. You can do this with a standard <code>if/else</code> statement in the <code>render()</code> method of a React component.",
+        "Another application of using JavaScript to control your rendered view is to tie the elements that are rendered to a condition. When the condition is true, one view renders. When it's false, it's a different view. You can do this with a standard <code>if/else</code> statement in the <code>render()</code> method of a React component.",
         "<hr>",
         "MyComponent contains a <code>boolean</code> in its state which tracks whether you want to display some element in the UI or not. The <code>button</code> toggles the state of this value. Currently, it renders the same UI every time. Rewrite the <code>render()</code> method with an <code>if/else</code> statement so that if <code>display</code> is <code>true</code>, you return the current markup. Otherwise, return the markup without the <code>h1</code> element.",
-        "<strong>Note:</strong>&nbsp;You must write an <code>if/else</code> to pass the tests, use of the ternary operator will not pass here."
+        "<strong>Note:</strong>&nbsp;You must write an <code>if/else</code> to pass the tests. Use of the ternary operator will not pass here."
       ],
       "files": {
         "indexjsx": {

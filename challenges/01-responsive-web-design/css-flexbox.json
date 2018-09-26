@@ -24,6 +24,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cgz3QS7",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -104,6 +105,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/c9W7MhM",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -226,6 +228,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cBEkbfJ",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -272,18 +275,21 @@
       "tests": [
         {
           "text": "The <code>header</code> should have a <code>flex-direction</code> property set to row.",
-          "testString": "assert(code.match(/header\\s*?{\\s*?.*?\\s*?.*?\\s*?flex-direction:\\s*?row;/g), 'The <code>header</code> should have a <code>flex-direction</code> property set to row.');"
+          "testString": "assert(code.match(/header\\s*?{[^}]*?flex-direction:\\s*?row;/g), 'The <code>header</code> should have a <code>flex-direction</code> property set to row.');"
         },
         {
           "text": "The <code>footer</code> should have a <code>flex-direction</code> property set to row.",
-          "testString": "assert(code.match(/footer\\s*?{\\s*?.*?\\s*?.*?\\s*?flex-direction:\\s*?row;/g), 'The <code>footer</code> should have a <code>flex-direction</code> property set to row.');"
+          "testString": "assert(code.match(/footer\\s*?{[^}]*?flex-direction:\\s*?row;/g), 'The <code>footer</code> should have a <code>flex-direction</code> property set to row.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"header {flex-direction: row;} footer {flex-direction: row;}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cJb8yuq",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -406,6 +412,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cZmWeA4",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -460,6 +467,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cnzdVC9",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -584,6 +592,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/c43gnHm",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -634,11 +643,14 @@
           "testString": "assert(code.match(/header\\s.profile-name\\s*{\\s*?.*?\\s*?.*?\\s*?\\s*?.*?\\s*?justify-content\\s*:\\s*(center|flex-start|flex-end|space-between|space-around)\\s*;/g), 'The <code>.profile-name</code> element should have the <code>justify-content</code> property set to any of these values: center, flex-start, flex-end, space-between, or space-around.');"
         }
       ],
-      "solutions": [],
+      "solutions": [
+        "var code = \"header .profile-name {display: flex; flex-direction: column; justify-content: center; margin-left: 10px;}\""
+      ],
       "hints": [],
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/c43GgTa",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -764,6 +776,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/c8aggtk",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -806,20 +819,12 @@
       "description": [
         "The last challenge introduced the <code>align-items</code> property and gave an example. This property can be applied to a few tweet embed elements to align the flex items inside them.",
         "<hr>",
-        "Add the CSS property <code>align-items</code> to the header's <code>.follow-btn</code> element, the header's <code>h3</code>, and the header's <code>h4</code>. Set the value to center."
+        "Add the CSS property <code>align-items</code> to the header's <code>.follow-btn</code> element. Set the value to center."
       ],
       "tests": [
         {
           "text": "The <code>.follow-btn</code> element should have the <code>align-items</code> property set to a value of center.",
           "testString": "assert($('.follow-btn').css('align-items') == 'center', 'The <code>.follow-btn</code> element should have the <code>align-items</code> property set to a value of center.');"
-        },
-        {
-          "text": "The <code>h3</code> element should have the <code>align-items</code> property set to a value of center.",
-          "testString": "assert($('h3').css('align-items') == 'center', 'The <code>h3</code> element should have the <code>align-items</code> property set to a value of center.');"
-        },
-        {
-          "text": "The <code>h4</code> element should have the <code>align-items</code> property set to a value of center.",
-          "testString": "assert($('h4').css('align-items') == 'center', 'The <code>h4</code> element should have the <code>align-items</code> property set to a value of center.');"
         }
       ],
       "solutions": [],
@@ -827,6 +832,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cd3PNfq",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -937,7 +943,7 @@
         "CSS flexbox has a feature to split a flex item into multiple rows (or columns). By default, a flex container will fit all flex items together. For example, a row will all be on one line.",
         "However, using the <code>flex-wrap</code> property, it tells CSS to wrap items. This means extra items move into a new row or column. The break point of where the wrapping happens depends on the size of the items and the size of the container.",
         "CSS also has options for the direction of the wrap:",
-        "<ul><li><code>nowrap</code>: this is the default setting, and does not wrap items.</li><li><code>wrap</code>: wraps items from left-to-right if they are in a row, or top-to-bottom if they are in a column.</li><li><code>wrap-reverse</code>: wraps items from right-to-left if they are in a row, or bottom-to-top if they are in a column.</li></ul>",
+        "<ul><li><code>nowrap</code>: this is the default setting, and does not wrap items.</li><li><code>wrap</code>: wraps items from left-to-right if they are in a row, or top-to-bottom if they are in a column.</li><li><code>wrap-reverse</code>: wraps items from bottom-to-top if they are in a row, or right-to-left if they are in a column.</li></ul>",
         "<hr>",
         "The current layout has too many boxes for one row. Add the CSS property <code>flex-wrap</code> to the <code>#box-container</code> element, and give it a value of wrap."
       ],
@@ -952,6 +958,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cQv9ZtG",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1037,6 +1044,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cd3PBfr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1097,6 +1105,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/c2p78cg",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1164,6 +1173,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/c3d9nCa",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1229,6 +1239,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cbpW2tE",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1286,6 +1297,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cMbvNAG",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1346,6 +1358,7 @@
       "releasedOn": "Feb 17, 2017",
       "challengeType": 0,
       "translations": {},
+      "videoUrl": "https://scrimba.com/p/pVaDAv/cMbvzfv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",

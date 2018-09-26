@@ -101,6 +101,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cE8Gpt2",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -192,6 +193,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cE8Gqf3",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -273,6 +275,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/ceZ7DtN",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -344,6 +347,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cgR7Dc7",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -365,7 +369,7 @@
       "id": "bad87fee1348bd9aedf08802",
       "title": "Uncomment HTML",
       "description": [
-        "Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed the end user.",
+        "Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.",
         "Commenting is also a convenient way to make code inactive without having to delete it entirely.",
         "Comments in HTML starts with <code>&#60;!--</code>, and ends with a <code>--&#62;</code>",
         "<hr>",
@@ -439,6 +443,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cBmG9T7",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -537,6 +542,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cGyGbca",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -569,18 +575,21 @@
         {
           "text": "Delete your <code>h1</code> element.",
           "testString":
-            "assert(($(\"h1\").length == 0), 'Delete your <code>h1</code> element.');"
+            "assert(!code.match(/<h1>/gi) && !code.match(/<\\/h1>/gi), 'Delete your <code>h1</code> element.');"
         },
         {
           "text": "Leave your <code>h2</code> element on the page.",
           "testString":
-            "assert(($(\"h2\").length > 0), 'Leave your <code>h2</code> element on the page.');"
+            "assert(code.match(/<h2>[\\w\\W]*<\\/h2>/gi), 'Leave your <code>h2</code> element on the page.');"
         },
         {
           "text": "Leave your <code>p</code> element on the page.",
           "testString":
-            "assert(($(\"p\").length > 0), 'Leave your <code>p</code> element on the page.');"
+            "assert(code.match(/<p>[\\w\\W]*<\\/p>/gi), 'Leave your <code>p</code> element on the page.');"
         }
+      ],
+      "solutions": [
+        "var code = \"<h2>CatPhotoApp</h2><p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\""
       ],
       "challengeType": 0,
       "translations": {
@@ -620,6 +629,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/ckK73C9",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -706,6 +716,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/c4Ep9Am",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -817,8 +828,8 @@
           ]
         }
       },
-      "guideUrl":
-        "https://guide.freecodecamp.org/certificates/add-images-to-your-website",
+      "guideUrl": "https://guide.freecodecamp.org/certificates/add-images-to-your-website",
+      "videoUrl": "https://scrimba.com/p/pVMPUv/c8EbJf2",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -919,6 +930,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/c8EkncB",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1011,6 +1023,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cyrDRUL",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1043,13 +1056,14 @@
       "title": "Nest an Anchor Element within a Paragraph",
       "description": [
         "You can nest links within other text elements.",
-        "<blockquote>&#60;p&#62;<br> Here's a &#60;a href=\"http://freecodecamp.org\"&#62; link to freecodecamp.org&#60;/a&#62; for you to follow.<br>&#60;/p&#62;</blockquote>",
+        "<blockquote>&#60;p&#62;<br> Here's a &#60;a target=\"_blank\" href=\"http://freecodecamp.org\"&#62; link to freecodecamp.org&#60;/a&#62; for you to follow.<br>&#60;/p&#62;</blockquote>",
         "Let's break down the example:",
         "Normal text is wrapped in the <code>p</code> element:<br> <code>&#60;p&#62; Here's a ... for you to follow. &#60;/p&#62;</code>",
         "Next is the <code>anchor</code> element <code>&#60;a&#62;</code> (which requires a closing tag <code>&#60;/a&#62;</code>):<br>  <code>&#60;a&#62; ... &#60;/a&#62;</code>",
+        "<code>target</code> is an anchor tag attribute that specifies where to open the link and the value <code>\"_blank\"</code> specifies to open the link in a new tab",
         "<code>href</code> is an anchor tag attribute that contains the URL address of the link:<br>  <code>&#60;a href=\"http://freecodecamp.org\"> ... &#60;/a&#62;</code>",
         "The text, <strong>\"link to freecodecamp.org\"</strong>, within the anchor element called <code>anchor text</code>, will display a link to click:<br>  <code>&#60;a href=\" ... \"&#62;link to freecodecamp.org&#60;/a&#62;</code>",
-        "The final output of the example will look like this:<br><p>Here's a <a href=\"http://freecodecamp.org\"> link to freecodecamp.org</a> for you to follow.</p>",
+        "The final output of the example will look like this:<br><p>Here's a <a target=\"_blank\" href=\"http://freecodecamp.org\"> link to freecodecamp.org</a> for you to follow.</p>",
         "<hr>",
         "Now nest your existing <code>a</code> element within a new <code>p</code> element (just after the existing <code>main</code> element). The new paragraph should have text that says \"View more cat photos\", where \"cat photos\" is a link, and the rest of the text is plain text."
       ],
@@ -1154,6 +1168,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cb6k8Cb",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1233,6 +1248,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cMdkytL",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1334,6 +1350,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cRdBnUr",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1441,6 +1458,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cDKVPuv",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1575,6 +1593,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cQ3B8TM",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1673,6 +1692,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/c2EVnf6",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1779,8 +1799,8 @@
           ]
         }
       },
-      "guideUrl":
-        "https://guide.freecodecamp.org/certificates/add-placeholder-text-to-a-text-field",
+      "guideUrl": "https://guide.freecodecamp.org/certificates/add-placeholder-text-to-a-text-field",
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cKdJDhg",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1886,6 +1906,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cmQ3Kfa",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -1911,7 +1932,7 @@
             "    <li>other cats</li>",
             "  </ol>",
             "  <input type=\"text\" placeholder=\"cat photo URL\">",
-            "<main>"
+            "</main>"
           ],
           "head": [],
           "tail": []
@@ -1995,8 +2016,8 @@
           ]
         }
       },
-      "guideUrl":
-        "https://guide.freecodecamp.org/certificates/add-a-submit-button-to-a-form",
+      "guideUrl": "https://guide.freecodecamp.org/certificates/add-a-submit-button-to-a-form",
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cp2Nkhz",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2097,6 +2118,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cMd4EcQ",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2138,7 +2160,7 @@
       "description": [
         "You can use <code>radio buttons</code> for questions where you want the user to only give you one answer out of multiple options.",
         "Radio buttons are a type of <code>input</code>.",
-        "Each of your radio buttons can be nested within its own <code>label</code> element. By wrapping an <code>input</code> element inside of a <code>label</code> element it will autoatically associate the radio button input with the label element surrounding it.",
+        "Each of your radio buttons can be nested within its own <code>label</code> element. By wrapping an <code>input</code> element inside of a <code>label</code> element it will automatically associate the radio button input with the label element surrounding it.",
         "All related radio buttons should have the same <code>name</code> attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.",
         "Here's an example of a radio button:",
         "<blockquote>&#60;label&#62; <br>&nbsp;&nbsp;&#60;input type=\"radio\" name=\"indoor-outdoor\"&#62;Indoor <br>&#60;/label&#62;</blockquote>",
@@ -2245,6 +2267,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cNWKvuR",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2286,7 +2309,7 @@
       "description": [
         "Forms commonly use <code>checkboxes</code> for questions that may have more than one answer.",
         "Checkboxes are a type of <code>input</code>",
-        "Each of your checkboxes can be nested within its own <code>label</code> element. By wrapping an <code>input</code> element inside of a <code>label</code> element it will autoatically associate the checkbox input with the label element surrounding it.",
+        "Each of your checkboxes can be nested within its own <code>label</code> element. By wrapping an <code>input</code> element inside of a <code>label</code> element it will automatically associate the checkbox input with the label element surrounding it.",
         "All related checkbox inputs should have the same <code>name</code> attribute.",
         "It is considered best practice to explicitly define the relationship between a checkbox <code>input</code> and its corresponding <code>label</code> by setting the <code>for</code> attribute on the <code>label</code> element to match the <code>id</code> attribute of the associated <code>input</code> element.",
         "Here's an example of a checkbox:",
@@ -2374,6 +2397,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cqrkJsp",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2480,6 +2504,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cWk3Qh6",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2603,6 +2628,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cNW4kC3",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2648,7 +2674,7 @@
       "id": "587d78aa367417b2b2512aed",
       "title": "Declare the Doctype of an HTML Document",
       "description": [
-        "The challenges so far have covered specific HTML tags and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.",
+        "The challenges so far have covered specific HTML elements and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.",
         "At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions of the language.",
         "You tell the browser this information by adding the <code>&lt;!DOCTYPE ...&gt;</code> tag on the first line, where the \"<code>...</code>\" part is the version of HTML. For HTML5, you use <code>&lt;!DOCTYPE html&gt;</code>.",
         "The <code>!</code> and uppercase <code>DOCTYPE</code> is important, especially for older browsers. The <code>html</code> is not case sensitive.",
@@ -2694,6 +2720,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cra98AJ",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
@@ -2768,6 +2795,7 @@
           ]
         }
       },
+      "videoUrl": "https://scrimba.com/p/pVMPUv/cra9bfP",
       "files": {
         "indexhtml": {
           "key": "indexhtml",
